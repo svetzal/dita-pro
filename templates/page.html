@@ -16,8 +16,8 @@
       <div class="navbar-inner">
         <div class="container">
           <ul class="nav">
-            <li><a href="/index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
-            <li><a href="/events.html"><i class="icon-calendar icon-white"></i>&nbsp;Events</a></li>
+            <li {% if filename=="/index.html" %}class="active"{% endif %}><a href="/index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+            <li {% if filename=="/events.html" %}class="active"{% endif %}><a href="/events.html"><i class="icon-calendar icon-white"></i>&nbsp;Events</a></li>
           </ul>
         </div>
       </div>
