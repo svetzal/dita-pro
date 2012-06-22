@@ -1,8 +1,13 @@
 body {
-  padding-top: 0pt;
+  padding-top: 36pt;
 }
 
 #logo {
   margin: 18pt 0;
   text-align: right;
+}
+
+#logo img {
+  width: 350px;
+  height: 45px;
 }

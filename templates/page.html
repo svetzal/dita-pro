@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{% block title %}Untitled Page{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durham I.T. Professionals - {% block title %}Untitled Page{% endblock %}</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" type="text/css">
     <link rel="stylesheet" href="/css/site.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" type="text/css">
     <script language="javascript" href="/js/bootstrap.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="/index.html"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
+            <li><a href="/events.html"><i class="icon-calendar icon-white"></i>&nbsp;Events</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="container">
+      <div class="span12">
+        <div id="logo"><img src="/img/logo.x2.png"></div>
+      </div>
       {% block content %}Content missing.{% endblock %}
     </div>
   </body>
